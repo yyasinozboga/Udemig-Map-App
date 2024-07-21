@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Leaflet Css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- Title -->
+    <title>Map</title>
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <aside class="sidebar">
+      <h1 class="title">Notlar</h1>
+
+      <!-- Form -->
+      <form class="form">
+        <div class="form-group">
+          <label for="nots" class="form-label">Not Ekle</label>
+          <input type="text" id="nots" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="form-label">Tarih Ekle</label>
+          <input type="date" id="date" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="status" class="form-label">Durum</label>
+          <select id="status" class="select">
+            <option value="park">Park Yeri</option>
+            <option value="home">Ev</option>
+            <option value="job">İş</option>
+            <option value="goto">Ziyaret Edilecek</option>
+          </select>
+        </div>
+
+        <button class="task-add-btn">Ekle</button>
+      </form>
+
+      <!-- Task Container -->
+      <div class="task-container">
+        <!-- Task List -->
+        <ul class="task-list"></ul>
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- JS -->
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
