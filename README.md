@@ -1,4 +1,4 @@
-# Map
+# Udemig Map App
 
 The world is in the palm of your hand with Traveler Map! Developed for those who love traveling and want to find their way easily, this application detects your location and offers you the best routes.
 
